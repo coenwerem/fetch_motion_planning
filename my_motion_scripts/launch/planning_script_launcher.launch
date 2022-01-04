@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- <node pkg="my_motion_scripts" name="planning" type="planning_script.py" output="screen" /> -->
+
+<node pkg="my_motion_scripts" name="planning_joint" type="planning_joint_space.py" output="screen" />
+<node pkg="my_motion_scripts" name="data" type="get_data.py" output="screen" />
+
+
+</launch>
