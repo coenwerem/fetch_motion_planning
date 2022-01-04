@@ -1,10 +1,18 @@
 <?xml version="1.0"?>
 <launch>
 
+<!-- Full arm plan -->
 <!-- <node pkg="my_motion_scripts" name="planning" type="planning_script.py" output="screen" /> -->
 
-<node pkg="my_motion_scripts" name="planning_joint" type="planning_joint_space.py" output="screen" />
-<node pkg="my_motion_scripts" name="data" type="get_data.py" output="screen" />
+<!-- Single joint plan -->
+<!-- <node pkg="my_motion_scripts" name="planning_joint" type="planning_joint_space.py" output="screen" /> -->
+
+<!-- Get group data -->
+<!-- <node pkg="my_motion_scripts" name="data" type="get_data.py" output="screen" /> -->
+
+<!-- Single joint plan + execution -->
+<node pkg="my_motion_scripts" name="plan_exec_joint" type="plan_exec_joint_space.py" output="screen" />
+
 
 
 </launch>
